@@ -160,6 +160,7 @@ class ViewController: UIViewController {
         }
     }
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
         for i in 0...3 {
             favoriteSelect.setTitle(favs[i].label, forSegmentAt: i);
         }

@@ -10,7 +10,7 @@ import UIKit
 class Favorite {
     
     var label : String = "Preset";
-    var channel : Int = 0;
+    var channel : Int = 1;
     
     init(){}
     

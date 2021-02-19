@@ -10,6 +10,7 @@ import UIKit
 class ConfiguratorViewController: UIViewController {
     
     
+    @IBOutlet weak var previewSegment: UISegmentedControl!
     
     
     @IBOutlet weak var segButtons: UISegmentedControl!
@@ -31,9 +32,9 @@ class ConfiguratorViewController: UIViewController {
                 
             }
             else {
-                print("Accessing")
+                
                 let problem = (text.count > 4) ? "long" : "short";
-                let def = UIAlertAction(title: "Ok", style: .default)
+                let def = UIAlertAction(title: "OK", style: .default)
                
                 let labelProblem = UIAlertController(title: "Favorite Label Problem", message: "Your entered label is too \(problem). Please change and try again", preferredStyle: .alert)
                 labelProblem.addAction(def)
@@ -62,13 +63,17 @@ class ConfiguratorViewController: UIViewController {
             
         }
         
-        
-       
-        
-        
-        
-        
+        textField.text = "";
+        updatePreview();
     }
+    
+    func updatePreview(){
+        
+        for i in 0...3 {
+            previewSegment.setTitle(favs[i].label, forSegmentAt: i);
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
