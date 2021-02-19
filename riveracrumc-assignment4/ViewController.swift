@@ -7,6 +7,13 @@
 
 import UIKit
 
+var fav1 : Favorite = Favorite();
+var fav2 : Favorite = Favorite();
+var fav3 : Favorite = Favorite();
+var fav4 : Favorite = Favorite();
+let favs = [fav1, fav2, fav3, fav4]
+
+
 class ViewController: UIViewController {
 
     
@@ -90,17 +97,17 @@ class ViewController: UIViewController {
         
         switch index {
         case 0 :
-            channelLabel.text = "7";
-            image.image = UIImage(named: "ABC");
+            channelLabel.text = String(fav1.channel);
+            
         case 1 :
-            channelLabel.text = "9";
-            image.image = UIImage(named: "NBC");
+            channelLabel.text = String(fav2.channel);
+            
         case 2 :
-            channelLabel.text = "11";
-            image.image = UIImage(named: "TBS");
+            channelLabel.text = String(fav3.channel);
+            
         case 3 :
-            channelLabel.text = "42";
-            image.image = UIImage(named: "TLC")
+            channelLabel.text = String(fav4.channel);
+            
         default : channelLabel.text = "0";
         }
     }
@@ -141,13 +148,21 @@ class ViewController: UIViewController {
     }
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
-        
+        updateSegView()
+    
+    }
+    func updateSegView(){
+        for i in 0...3 {
+            favoriteSelect.setTitle(favs[i].label, forSegmentAt: i);
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        for i in 0...3 {
+            favoriteSelect.setTitle(favs[i].label, forSegmentAt: i);
+        }
     }
     
     

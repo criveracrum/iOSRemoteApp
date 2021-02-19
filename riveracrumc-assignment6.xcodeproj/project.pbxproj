@@ -14,6 +14,8 @@
 		6384AB4525C5BD0B00C41873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6384AB4325C5BD0B00C41873 /* Main.storyboard */; };
 		6384AB4725C5BD0B00C41873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6384AB4625C5BD0B00C41873 /* Assets.xcassets */; };
 		6384AB4A25C5BD0B00C41873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6384AB4825C5BD0B00C41873 /* LaunchScreen.storyboard */; };
+		63B713BA25E0109F00DF80F3 /* ModelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B713B925E0109F00DF80F3 /* ModelConfiguration.swift */; };
+		63B713BD25E01C8000DF80F3 /* ConfiguratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B713BC25E01C8000DF80F3 /* ConfiguratorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6384AB4625C5BD0B00C41873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6384AB4925C5BD0B00C41873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6384AB4B25C5BD0B00C41873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B713B925E0109F00DF80F3 /* ModelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfiguration.swift; sourceTree = "<group>"; };
+		63B713BC25E01C8000DF80F3 /* ConfiguratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				6384AB3F25C5BD0B00C41873 /* SceneDelegate.swift */,
 				6384AB4125C5BD0B00C41873 /* ViewController.swift */,
 				6384AB4325C5BD0B00C41873 /* Main.storyboard */,
+				63B713BC25E01C8000DF80F3 /* ConfiguratorViewController.swift */,
+				63B713B925E0109F00DF80F3 /* ModelConfiguration.swift */,
 				6384AB4625C5BD0B00C41873 /* Assets.xcassets */,
 				6384AB4825C5BD0B00C41873 /* LaunchScreen.storyboard */,
 				6384AB4B25C5BD0B00C41873 /* Info.plist */,
@@ -143,6 +149,8 @@
 				6384AB4225C5BD0B00C41873 /* ViewController.swift in Sources */,
 				63716D1D25D84C42000FF1C8 /* DVRViewController.swift in Sources */,
 				6384AB3E25C5BD0B00C41873 /* AppDelegate.swift in Sources */,
+				63B713BA25E0109F00DF80F3 /* ModelConfiguration.swift in Sources */,
+				63B713BD25E01C8000DF80F3 /* ConfiguratorViewController.swift in Sources */,
 				6384AB4025C5BD0B00C41873 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
